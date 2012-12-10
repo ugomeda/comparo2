@@ -1,0 +1,601 @@
+/* Details popup */
+#details .stats {
+  width: 40%;
+  float: left;
+}
+
+#details .files {
+  margin-left: 40%;
+  width: 60%;
+}
+  
+#details .file {
+  padding-left: 18px;
+  background: url(../img/attach.png) no-repeat;
+}
+
+#fileModif {
+  padding-left: 18px;
+  background: url(../img/bullet_error.png) no-repeat;
+  background-position: 0 3px;
+}
+
+/* Options popup */
+#options .simple-filters {
+  width: 40%;
+  float: left;
+}
+
+#options .other-options {
+  margin-left: 40%;
+  width: 60%;
+}
+
+/* Graphe */
+#graph {
+  width: 100%;
+  height: 120px;
+  margin: 5px 0;
+  cursor: default;
+}
+
+#selection, #ignoretags {
+  display: block;
+  padding: 5px;
+}
+
+/* Buttons */
+a.copy-button, a.discuss-button, a.edit-button {
+  text-indent: -999px;
+  width: 16px;
+  height: 16px;
+  display: block;
+  overflow: hidden;
+  float: right;
+  visibility: hidden;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+}
+
+.copy-button { background-image: url(../img/textfield.png); }
+.discuss-button { background-image: url(../img/user_comment.png); }
+.edit-button { background-image: url(../img/style_edit.png); }
+
+#liste-differences > li:hover .copy-button, .copy-button:hover,
+#liste-differences > li:hover .discuss-button, .discuss-button:hover,
+#liste-differences > li:hover .edit-button, .edit-button:hover {
+  visibility: visible;
+}
+
+/* Diff list */
+#liste-differences {
+  list-style-type: none;
+  margin-top: 5px;
+  padding: 0 5px;
+}
+
+/* Commented / Active comment */
+#liste-differences > li.active {
+  border-left: 2px solid #F38630;
+  padding-left: 4px;
+}
+
+.letscomment {
+  cursor: pointer;
+}
+
+/* Discuss */
+#liste-differences > li .discuss {
+  width: 80%;
+  margin: 5px 0 0 50px;
+  background: #fafafa;
+  border: 1px solid #cccccc;
+  padding: 4px;
+  font-size: 12px;
+}
+
+#liste-differences > li .discuss ul {
+  padding: 2px 0 2px 23px;
+  display: block;
+  margin-left: -23px;
+  position: relative;
+}
+
+#liste-differences > li .delete {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  display: none;
+  background: url(../img/cross.png);
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+#liste-differences > li .discuss ul:hover .delete {
+  display: block !important;
+}
+
+#liste-differences > li .discuss .username {
+  font-weight: bold;
+}
+
+/* Line layout */
+#liste-differences > li {
+  margin: 0;
+  padding: 20px 0 20px 6px;
+  border-bottom: 2px solid #dddddd;
+}
+
+/* Icons */
+.comment-error .timings { background: url(../img/exclamation.png) no-repeat !important; }
+.comment-sending .timings { background: url(../img/indicator.white.gif) no-repeat !important; }
+.line-ok .timings { background-image: url(../img/tick-g.png); }
+.line-edit .timings { background-image: url(../img/pencil-g.png); }
+.line-timing .timings { background-image: url(../img/time-g.png); }
+.line-ins .timings { background-image: url(../img/add-g.png); }
+.line-del .timings { background-image: url(../img/cancel-g.png); }
+.line-unk .timings { background-image: url(../img/clock_edit-g.png); }
+
+/* CP */
+.cpl_nonrelu, .cpl_relu {
+  margin: 0 4px;
+  font-size: 10px;
+  padding: 0px 2px;
+  background: #fafafa;
+  border: 1px solid #cccccc;
+}
+
+.cpl_red {
+  border: 1px solid #D30000 !important;
+  color: #D30000 !important;
+}
+
+.cpl_orange {
+  border: 1px solid #FF821C !important;
+  color: #FF821C !important;
+}
+
+.text_1 .cpl_relu {
+  display: none;
+}
+.text_2 .cpl_nonrelu {
+  display: none;
+}
+
+.hide-cp .cpl_nonrelu, .hide-cp .cpl_relu {
+  display: none !important;
+}
+
+/* Ids */
+.id_nonrelu, .id_relu {
+  margin: 0 4px;
+  font-size: 10px;
+  padding: 0px 2px;
+}
+
+.id_relu {
+  background: #dcffdb;
+  border: 1px solid #a7d2a4;
+  color: #3b6d35;
+}
+
+.id_nonrelu {
+  background: #fef4f4;
+  border: 1px solid #f8b6b7;
+  color: #bf1619;
+}
+
+.text_1 .id_relu {
+  display: none;
+}
+.text_2 .id_nonrelu {
+  display: none;
+}
+.hide-id .id_relu, .hide-id .id_nonrelu {
+  display: none !important;
+}
+
+/* Timings */
+.timings {
+  display: block;
+  line-height: 18px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.timing {
+  font-size: 12px;
+  font-family:Courier,"Courier New",monospace;
+}
+
+.timings .show {
+  font-family:Courier,"Courier New",monospace;
+  font-size:16px;
+  color: #555555;
+  cursor: help;
+}
+
+/* Text */
+.text {
+  font-size: 14px;
+  display: block;
+  padding: 3px 0;
+  font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+  margin-left: 30px;
+  color: #000000;
+}
+
+.vo {
+  font-size: 15px;
+  display: block;
+  padding: 3px 0;
+  font-family:Georgia,"Times New Roman",Times,serif;
+  margin-left: 30px;
+}
+
+.text ins {
+  background-color: #c6f597;
+  text-decoration: none;
+}
+
+.text del {
+  background-color: #f4aba8;
+}
+
+.text_2 del {
+  display: none;
+}
+
+.text_1 ins {
+  display: none;
+}
+.text_1 del {
+  text-decoration:none;
+}
+
+.no-diff ins {
+  background: transparent !important;
+}
+
+.no-diff del {
+  background: transparent !important;
+  text-decoration: none;
+}
+
+/* Comment input */
+.comment, #comment_input {
+  color: #CE3C23;
+  font-weight: bold;
+  padding: 3px 0 0 30px;
+  display: block;
+}
+
+#comment_input input {
+  width: 100%;
+  margin: 5px 0;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+  color: #CE3C23;
+  font-weight: bold;
+  height: 20px;
+}
+
+/* Display cut & paste popup */
+.copytext {
+  font-family:Courier,"Courier New",monospace;
+  font-size:14px;
+}
+
+/* Discuss input */
+#discuss-text {
+  width: 100%;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  color: #333333;
+  font-weight: bold;
+  height: 20px;
+}
+
+/* Error msg */
+#error {
+  border: 0 !important;
+  margin: 50px 0 0 0 !important;
+  display: block;
+  text-align: center;
+}
+#error span {
+  border: 1px solid #cccccc;
+  padding: 20px;
+}
+
+/* RS */
+.rs {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*.re .rs_1 { background-color: #9999FF; }
+.rs .rs_2 { background-color: #99CCFF; }
+.rs .rs_3 { background-color: #99FFFF; }
+.rs .rs_4 { background-color: #99FFCC; }
+.rs .rs_5 { background-color: #99FF99; }
+.rs .rs_6 { background-color: #CCFF99; }
+.rs .rs_7 { background-color: #FFFF99; }
+.rs .rs_8 { background-color: #FFCC99; }
+.rs .rs_9 { background-color: #FF9999; }*/
+
+.re .rs_8 { color: #0F0F75; }
+.rs .rs_6 { color: #235689; }
+.rs .rs_4 { color: #4FB5B5; }
+.rs .rs_2 { color: #45AB78; }
+.rs .rs_1 { color: #3BA13B; }
+.rs .rs_3 { color: #8ABD57; }
+.rs .rs_5 { color: #A8A85C; }
+.rs .rs_7 { color: #A26F3C; }
+.rs .rs_9 { color: #7F1919; }
+
+/* Stats */
+.progress, .progress-total {
+  background-color: #ffffff;
+  background-image: url(../img/progres2.gif);
+  background-repeat: repeat-y;
+  border: 1px solid #00000;
+  text-align: center;
+  width: 300px;
+  height: 17px;
+  display:block;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: bold;
+  margin: 3px 0;
+}
+
+.progress {
+  border: 1px solid #999999;
+}
+
+.progress-total {
+  border: 1px solid #FA6900;
+}
+
+.progress label, .progress-total label {
+  font-weight: normal;
+}
+
+/* AIDE */
+.help .center_img {
+  padding: 2px;
+  border: 1px solid #aaaaaa;
+  display: block;
+  margin: 5px auto;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.sommaire {
+  margin : 0 0 30px 0 !important;
+  list-style-type: none;
+}
+
+.help hr {
+  margin: 10px 0;
+  color: #cccccc;
+  background-color: #cccccc;
+  height: 2px;
+  border: 0;
+}
+
+.help h2 {
+  font-size:18px;
+  color: #333333;
+  margin: 10px 0;
+}
+
+.help h3 {
+  font-size: 15px;
+  color: #333333;
+  margin: 10px 0;
+}
+
+.help p {
+  padding: 0 0 0 20px;
+  text-align: justify;
+  color: #444444;
+}
+
+.help ul {
+  margin: 0 0 0 50px;
+  color: #444444;
+}
+
+/* ACCUEIL */
+
+#panels {
+  width: 500px;
+  margin: 50px auto 0 auto;
+}
+
+#newcomparo, #newgroup {
+  width: 500px;
+  background: #EBEFD7;
+  line-height: 30px;
+  padding: 20px;
+}
+
+#panels h1, #panels h1 {
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+
+#panels label {
+  font-weight: bold;
+}
+
+#panels .label {
+  float: left;
+  width: 180px;
+  text-align: right;
+  padding: 0 15px 0 0;
+}
+
+#panels .input {
+  width: 240px;
+  height: 23px;
+}
+
+.sendbutton {
+  width: 130px;
+  text-align: center;
+  border: 1px solid #FA6900;
+  background: #ffffff;
+  height: 30px;
+  margin: 0 0 0 370px;
+  font-weight: bold;
+}
+
+#switch-options {
+  padding: 0 0 0 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url(../img/bullet_toggle_minus.png);
+}
+
+#switch-options.off {
+  background-image: url(../img/bullet_toggle_plus.png) !important;
+}
+
+/* Error */
+.error div {
+  width: 500px;
+  background: #EBEFD7;
+  margin: 50px auto 0 auto;
+  line-height: 30px;
+  padding: 20px;
+}
+
+.error h1 {
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+
+.error .button {
+  width: 130px;
+  text-align: center;
+  border: 1px solid #FA6900;
+  background: #ffffff;
+  height: 30px;
+  margin: 20px 0 0 370px;
+  font-weight: bold;
+  display: block;
+  color: #000000;
+}
+
+/* Groups */
+#comparos {
+  list-style-type: none;
+}
+
+#comparos li {
+  line-height: 20px;
+  padding: 10px 0 10px 6px;
+  border-bottom: 2px solid #dddddd;
+  position: relative;
+}
+
+#comparos .files {
+  color: #333333;
+  font-size: 13px;
+  /*font-weight: bold;*/
+  font-weight: normal;
+  /*border-bottom: 1px dotted #333333;*/
+}
+
+#comparos .files:hover {
+  border-bottom: 1px solid #333333;
+}
+
+#comparos .progress-comparo {
+  background-color: #ffffff;
+  background-image: url(../img/progres1.gif);
+  background-repeat: repeat-y;
+  border: 1px solid #00000;
+  text-align: center;
+  width: 130px;
+  height: 13px;
+  display:block;
+  font-size: 10px;
+  line-height: 13px;
+  margin: 3px 15px 3px 0;
+  border: 1px solid #999999;
+  float: left;
+}
+
+.hasVO, .noVO, .hasSC, .noSC {
+  font-size: 10px;
+  line-height: 13px; 
+  margin: 3px 10px 3px 0;
+  display: block;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+  padding: 0 0 0 10px;
+}
+
+.hasVO, .hasSC {
+  background-image: url(../img/bullet_green.png);
+}
+
+.noVO, .noSC {
+  background-image: url(../img/bullet_red.png);
+  visibility: hidden;
+}
+
+#comparoId {
+  width: 300px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 5px;
+}
+
+#addComparo {
+  padding: 0 5px;
+  line-height: 22px;
+  height: 22px;
+}
+
+/* editor */
+#editor {
+  width: 502px;
+  background: #fafafa;
+  border: 1px solid #cccccc;
+  padding: 4px;
+  margin: 10px 0 0 50px;
+}
+
+#editor textarea {
+  width: 500px;
+  border: 1px solid #cccccc;
+  margin: 0 0 5px 0
+}
+
+#editor .toolong {
+  background-color: #FFADAE;
+}
+
+#editor input {
+  width: 502px;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+}
+
+.edited {
+  width: 502px;
+  border: 1px solid #267F00;
+  background: #DBFFDC;
+  padding: 5px;
+  margin: 10px 0 0 50px;
+}

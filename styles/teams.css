@@ -1,0 +1,472 @@
+/* Teams */
+
+.petit {
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.big {
+  font-size: 13px;
+}
+
+.flat {
+  font-weight: normal;
+}
+
+.centermsg {
+  padding: 50px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.smallcentermsg, #nojob {
+  padding: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+#navigation .rub a {
+  background-image: url(../img/rub.gif);
+  background-position: right 0px;
+  background-repeat: no-repeat;
+  padding: 0 25px 0 10px;
+  background-color: transparent !important;
+}
+
+#navigation .rub img {
+  border: 0px;
+  margin-top: 3px;
+  margin-bottom: -3px;
+}
+
+#navigation .rub:hover {
+  margin-left: -15px;
+  padding-left: 15px;
+  background-image: url(../img/rub2.gif);
+  background-position: -5px 0px;
+  background-repeat: no-repeat;
+  background-color: #F38630;
+}
+
+/* Menu */
+#menus {
+  width: 172px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+#menus .menu {
+  width: 170px;
+  list-style-type: none;
+
+}
+
+#menus .menu .title {
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  font-family:Georgia,"Times New Roman",Times,serif;
+  padding: 5px 5px 5px 30px;
+  margin: 10px 0 2px 0;
+}
+
+#menus .menu .item {
+  font-size: 12px;
+  padding: 2px 3px 4px 8px;
+  background-color: #ffffff;
+  line-height: 15px;
+}
+
+#menus .active {
+  border: 1px solid #888888;
+  background-image: url(../img/teams/fav.png);
+}
+
+#menus .active .title {
+  border-bottom: 1px solid #888888;
+  color: #ffffff;
+}
+
+#menus .dashboard .title {
+  background-image: url(../img/teams/dashboard.png);
+}
+
+#menus .orga .title {
+  background-image: url(../img/teams/orga.png);
+}
+
+#menus .tools .title {
+  background-image: url(../img/teams/tools.png);
+}
+
+#menus .teams .title {
+  background-image: url(../img/teams/team.png);
+}
+#menus .account .title {
+  background-image: url(../img/teams/account.png);
+}
+
+#menus .iactive {
+  background-image: url(../img/arrow-right.gif);
+  background-repeat: no-repeat;
+  background-position: right 0px;
+  padding: 0 11px 0 0 !important;
+  width: 100%;
+  margin-right: -1px;
+  font-weight: bold;
+}
+
+#menus .iactive a {
+  background-color: #FA6900;
+  color: #ffffff;
+  display: block;
+  padding: 2px 3px 4px 8px;
+}
+
+/* Content */
+.team-content {
+  padding: 10px 10px 10px 210px;
+  position: relative;
+}
+
+.team-content p {
+  margin: 10px 0;
+}
+
+.team-content h1 {
+  margin: 5px 0;
+  padding: 0 0 0 45px;
+  line-height: 32px;
+  background-repeat: no-repeat;
+  font-weight: normal;
+  font-family:Georgia,"Times New Roman",Times,serif;
+  font-style: italic;
+}
+
+.dashboard h1 {
+  background-image: url(../img/teams/dashboard-big.png);
+}
+
+.teams h1 {
+  background-image: url(../img/teams/team-big.png);
+}
+
+.account h1 {
+  background-image: url(../img/teams/account-big.png);
+}
+
+.team-content h3 {
+  margin: 30px 0 5px 0;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/* Apercu */
+#apercu {
+  width: 400px;
+  height: 15px;
+  margin: 0 auto;
+}
+
+/* Events */
+#events {
+  list-style-type: none;
+}
+
+#events li {
+  line-height: 25px;
+  margin: 3px 0;
+  padding-left: 110px;
+}
+
+#events .file span {
+  background: #FF9A21;
+}
+#events .dispatch span {
+  background: #00A91D;
+}
+#events .shoutbox span {
+  background: #EEB8D4;
+}
+#events .comparo span {
+  background: #58B8DD;
+}
+#events .task span {
+  background: #FFCC16;
+}
+
+#events .type span {
+  color: #ffffff;
+  font-weight: bold;
+  padding: 3px;
+  font-size: 12px;
+  margin: 0 5px;
+}
+
+#events .type {
+  display: block;
+  float: left;
+  width: 100px;
+  text-align: right;
+  margin-left: -110px;
+}
+
+#events .date {
+  color: #888888;
+  font-size: 11px;
+}
+
+/* Formulaires */
+.simpleForm, .stepForm, .smallForm, .selectForm {
+  line-height: 30px;
+}
+
+.simpleForm label, .stepForm label, .smallForm label, .selectForm label {
+  width: 30%;
+  font-weight: bold;
+  float: left;
+  text-align: right;
+  margin-right: 10px;
+  padding-left: -10px;
+}
+
+label.facultative {
+  color: #666666 !important;
+}
+
+.simpleForm input {
+  width: 65%;
+  height: 20px;
+}
+
+.selectForm input {
+  height: 20px;
+}
+
+.smallForm input {
+  width: 20%;
+  height: 20px;
+}
+
+.stepForm .name {
+  width: 40%;
+  height: 20px;
+}
+
+.stepForm .color {
+  width: 70px;
+  height: 20px;
+}
+
+#sendbutton {
+  padding: 10px;
+}
+
+/* Infos */
+#infos {
+  list-style-type: none;
+  line-height: 20px;
+  margin: 20px 0;
+}
+
+#infos li, .alert, .error, .ok, .alert_discret {
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+  padding: 5px 5px 5px 30px;
+  margin: 5px 0;
+  font-weight: bold;
+  display: block;
+}
+
+.alert_discret {
+  font-weight: normal;
+  background-image: url(../img/error.png);
+}
+
+.error {
+  border: 1px solid #A81000;
+  background-color: #FFBFC3;
+  color: #A81000;
+  background-image: url(../img/exclamation.png);
+}
+
+.ok {
+  border: 1px solid #007F0E;
+  background-color: #BCFFC2;
+  color: #007F0E;
+  background-image: url(../img/tick.png);
+}
+
+.alert {
+  border: 1px solid #FF6E00;
+  background-color: #FFFDB2;
+  color: #FF6E00;
+  background-image: url(../img/error.png);
+}
+
+/* Tables */
+table.normal {
+  margin: 20px 0;
+  width: 100%;
+	border-collapse: collapse;
+}
+
+table.normal tbody {
+  font-size: 11px;
+}
+
+table.normal td {
+  padding: 7px;
+  vertical-align: top;
+}
+
+table.normal .major {
+  width: 50%;
+  white-space:nowrap;
+}
+
+table.normal .check {
+  width: 20px;
+  text-align: center;
+}
+
+table.normal .actions {
+  font-size: 11px;
+  visibility: hidden;
+}
+
+table.normal tr:hover .actions {
+  visibility: visible;
+}
+
+table.normal thead {
+  background: #DFDFDF url(../img/teams/gray-grad.png) repeat-x;
+  border-bottom: 1px solid #FA6900;
+  font-weight: bold;
+}
+
+table.normal tr {
+  border: 1px solid #cccccc;
+}
+
+
+
+/* Boutons */
+.tablebutton {
+  padding: 5px;
+}
+
+/* Forum */
+#posts {
+  list-style-type: none;
+}
+
+#posts li {
+  clear: both;
+  border-bottom: 2px solid #cccccc;
+  padding: 15px 0;
+}
+
+#posts .user {
+  display: block;
+  width: 106px;
+  float: left;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  margin: 0 20px 0 0;
+}
+
+#posts .user img {
+  padding: 2px;
+  border: 1px solid #dddddd;
+}
+
+#posts .content {
+  margin-left: 130px;
+  display: block;
+}
+
+#posts .date {
+  font-size: 10px;
+}
+
+/* Dispatch */
+#jobs {
+  list-style-type: none;
+}
+
+.job {
+  clear: both;
+  line-height: 30px !important;
+  height: 30px;
+  overflow: hidden;
+  width: 700px;
+}
+
+.job .delete {
+  background: url(../img/cross.png);
+  width: 16px;
+  height: 16px;
+  margin: 7px 5px;
+  display: block;
+  float: left;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.job:hover .delete {
+  visibility: visible;
+}
+
+.job .user {
+  float: left;
+  width: 124px;
+  cursor: move;
+}
+
+.job .slider {
+  float: left;
+  width: 300px;
+  height: 8px;
+  margin: 10px 20px;
+}
+
+.job .display {
+  font-size: 12px;
+  float:left;
+  width: 150px;
+}
+
+/* COmmandbox*/ 
+.commandbox {
+  border: 1px solid #dddddd;
+  background: #f5f5f5;
+  height: 37px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.commandbox .left, .commandbox .right {
+  margin: 5px;
+  height: 27px;
+  display: block;
+  line-height: 27px;
+}
+
+.commandbox .left { float: left; }
+.commandbox .right { float: right; }
+
+.commandbox input, .commandbox select {
+  font-size: 12px;
+  cursor: pointer;
+  color: #333333;
+}
+
+.commandbox .button {
+}
+
+.dispatch {
+  margin: 0 0 0 30px;
+}

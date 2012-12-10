@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^view\-([a-z0-9A-Z]{30}).html$ http://www.comparo.fr/old/view-$1.html [R=307,L]
+RewriteRule ^view\-([a-z0-9A-Z]*).html$ view.php?id=$1 [L,QSA]
+RewriteRule ^group\-([a-z0-9A-Z]*).html$ group.php?id=$1 [L,QSA]
+RewriteRule ^file/([a-z0-9A-Z]*)/(.+)$ dl_file.php?id=$1&filename=$2 [L,QSA]
+RewriteRule ^help.html$ help.php [L,QSA]
+RewriteRule ^files/(.*)$ - [F]

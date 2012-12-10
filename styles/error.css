@@ -1,0 +1,31 @@
+#error {
+  margin: 100px auto 0 auto;
+  width: 500px;
+}
+
+#error h1 {
+  font-size: 30px;
+  font-family:Georgia,"Times New Roman",Times,serif;
+  font-weight:normal;
+  font-variant: italic;
+  font-size-adjust:none;
+  padding: 0;
+  margin: 0 0 5px 0;
+  width: 100%;
+  border-bottom: 3px solid #CE3C23;
+  color: #444444;
+  margin-bottom: 15px;
+}
+
+#msg {
+  font-size: 14px;
+  display: block;
+  margin: 20px 0;
+}
+
+#error a {
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin: 10px 0;
+}

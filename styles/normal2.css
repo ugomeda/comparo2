@@ -1,0 +1,177 @@
+/* http://www.colourlovers.com/palette/92095/Giant_Goldfish */
+
+#logo, #content, #navigation ul, #userBar div {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-width: 600px;
+}
+
+.clear {
+  width: 90%;
+  height: 1px;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+
+/* Header */
+
+#header {
+  background: #A7DBD8;
+}
+
+#userBar {
+  background: #A7DBD8;
+  text-align: right;
+}
+
+/* Logo + Button */
+#logo {
+  position: relative;
+}
+
+#logo .logo {
+  font-size: 35px;
+  font-family:Georgia,"Times New Roman",Times,serif;
+  font-weight:normal;
+  font-variant: italic;
+  color: #333333;
+  display: block;
+  font-size-adjust:none;
+  padding: 0;
+  margin: 0 10px 5px 10px;
+  width: 400px;
+  overflow: hidden;
+}
+
+#userBar {
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+#userBar a {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+}
+
+#userBar a:hover {
+  color: #d54e21;
+}
+
+#logo .logo > span {
+  vertical-align:super;
+  font-size: 30px;
+}
+
+#logo .logo > span > span {
+  font-style: italic;
+}
+
+#logo .logo:hover {
+  color: #444444;
+}
+
+#new-comparo {
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  background: #F4FFF9;
+  padding: 5px;
+  font-weight: normal;
+  border: 1px solid #E47D1E;
+}
+
+/* Navigation bar */
+#navigation-vide {
+  width: 100%;
+  height: 5px;
+  background: #FA6900;
+}
+
+#navigation {
+  width: 100%;
+  height: 30px;
+  background: #FA6900;
+}
+
+#navigation ul {
+  height: 34px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+#navigation li {
+  height: 30px;
+  display: block;
+}
+
+#navigation .right {
+  float: right;
+}
+
+#navigation .left {
+  height: 30px;
+  display: block;
+  float: left;
+}
+
+#navigation .linked {
+  background: #F38630;
+}
+
+#navigation .selected span {
+  background: url(../img/arrow4.gif) no-repeat center bottom;
+  height: 34px;
+  display: block;
+}
+
+#navigation .linked a:hover {
+  background: url(../img/arrow2.gif) no-repeat center bottom !important;
+  padding-bottom: 4px;
+}
+
+#navigation a {
+  height: 30px;
+  padding: 0 10px;
+  display: block;
+  background: #FA6900;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+#quick-filter {
+  height: 16px;
+  padding: 7px 10px;
+}
+
+/* Popups */
+.popup {
+  background: #EBEFD7;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.popup h2 {
+  padding: 0;
+  margin: 5px 10px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.popup p {
+  padding: 5px 10px;
+  line-height: 20px;
+}
+
+.popup .inputtext {
+  background: #ffffff;
+  color: #333333;
+  border: 1px solid #999999;
+  width: 200px;
+  font-size: 13px;
+  padding: 3px;
+}
